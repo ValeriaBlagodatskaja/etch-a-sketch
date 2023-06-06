@@ -1,10 +1,16 @@
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1 fr);
-  gap: 1px;
+  grid-template-columns: repeat(16, 36px);
+  grid-template-rows: repeat(16, 36px);
+  gap: 0px;
 }
 .grid-container div {
-  background-color: #ccc;
+  background-color: white;
   border: 1px solid #000;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  place-items: center;
 }
