@@ -1,14 +1,13 @@
 const container = document.querySelector(".container");
 
 function generateGrid(xAmount, yAmount) {
-  // 1. kustuta ära .grid-cotainer element
-  // 2. Loo uus .grid container element ja appendi see .container elemendile
-  // 3. Loo grid sinna .grid-container elemendi sisse
+  const existingContainer = document.querySelector(".grid-container");
+  if (existingContainer) {
+    existingContainer.remove();
+  }
 
   const containerGrid = document.createElement("div");
-  containerGrid.classList.add(".grid-container");
-
-  const 
+  containerGrid.classList.add("grid-container");
 
   containerGrid.style.gridTemplateColumns = `repeat(${xAmount}, 36px)`;
   containerGrid.style.gridTemplateRows = `repeat(${yAmount}, 36px)`;
